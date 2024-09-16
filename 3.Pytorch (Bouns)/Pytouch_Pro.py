@@ -95,7 +95,7 @@ if __name__ == '__main__':
      test()
 
 model.eval()
-data, target = test_data[1]
+data, target = test_data[12]
 data = data.unsqueeze(0).to(device)
 output = model(data)
 prediction = output.argmax(dim=1, keepdim=True).item()
